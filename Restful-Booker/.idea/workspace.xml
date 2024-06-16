@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="054150d3-1d1e-4e2e-95a1-4f2eef44f51f" name="Changes" comment="First push">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/restful/booker/apitest/GetRestfullApiByID.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/restful/booker/apitest/GetRestfullApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restful/booker/apitest/GetRestfullApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +36,10 @@
     "JUnit.GetRestfullApi.getAllBooking.executor": "Run",
     "JUnit.GetRestfullApi.verifyStatusCode.executor": "Run",
     "JUnit.GetRestfullApi.verifyStatusCodeBdd.executor": "Run",
+    "JUnit.GetRestfullApiByID.GetAllBookingByID.executor": "Run",
+    "JUnit.GetRestfullApiByID.executor": "Run",
+    "JUnit.GetRestfullApiByID.verifyStatusCode.executor": "Run",
+    "JUnit.GetRestfullApiByID.verifyUserByID.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -56,8 +58,8 @@
       <recent name="C:\Komal\Week 15\Postman\Restful-Booker\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GetRestfullApi.verifyStatusCodeBdd">
-    <configuration name="GetRestfullApi.getAllBooking" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GetRestfullApiByID">
+    <configuration name="GetRestfullApiByID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Restful-Booker" />
       <extension name="coverage">
         <pattern>
@@ -66,14 +68,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="restful.booker.apitest" />
-      <option name="MAIN_CLASS_NAME" value="restful.booker.apitest.GetRestfullApi" />
-      <option name="METHOD_NAME" value="getAllBooking" />
+      <option name="MAIN_CLASS_NAME" value="restful.booker.apitest.GetRestfullApiByID" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetRestfullApiByID.GetAllBookingByID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Restful-Booker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="restful.booker.apitest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="restful.booker.apitest" />
+      <option name="MAIN_CLASS_NAME" value="restful.booker.apitest.GetRestfullApiByID" />
+      <option name="METHOD_NAME" value="GetAllBookingByID" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetRestfullApi.verifyStatusCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GetRestfullApiByID.verifyStatusCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Restful-Booker" />
       <extension name="coverage">
         <pattern>
@@ -82,8 +99,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="restful.booker.apitest" />
-      <option name="MAIN_CLASS_NAME" value="restful.booker.apitest.GetRestfullApi" />
+      <option name="MAIN_CLASS_NAME" value="restful.booker.apitest.GetRestfullApiByID" />
       <option name="METHOD_NAME" value="verifyStatusCode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetRestfullApiByID.verifyUserByID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Restful-Booker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="restful.booker.apitest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="restful.booker.apitest" />
+      <option name="MAIN_CLASS_NAME" value="restful.booker.apitest.GetRestfullApiByID" />
+      <option name="METHOD_NAME" value="verifyUserByID" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,9 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GetRestfullApiByID" />
+        <item itemvalue="JUnit.GetRestfullApiByID.verifyUserByID" />
+        <item itemvalue="JUnit.GetRestfullApiByID.verifyStatusCode" />
+        <item itemvalue="JUnit.GetRestfullApiByID.GetAllBookingByID" />
         <item itemvalue="JUnit.GetRestfullApi.verifyStatusCodeBdd" />
-        <item itemvalue="JUnit.GetRestfullApi.verifyStatusCode" />
-        <item itemvalue="JUnit.GetRestfullApi.getAllBooking" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718564031528</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First push">
+      <option name="closed" value="true" />
+      <created>1718567695419</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718567695419</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
