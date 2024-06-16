@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="054150d3-1d1e-4e2e-95a1-4f2eef44f51f" name="Changes" comment="First push">
-      <change afterPath="$PROJECT_DIR$/src/test/java/restful/booker/apitest/GetRestfullApiByID.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/restful/booker/apitest/PostRestfullApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restful/booker/apitest/PostRestfullApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +40,7 @@
     "JUnit.GetRestfullApiByID.executor": "Run",
     "JUnit.GetRestfullApiByID.verifyStatusCode.executor": "Run",
     "JUnit.GetRestfullApiByID.verifyUserByID.executor": "Run",
+    "JUnit.PostRestfullApi.createNewBooking.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -58,7 +59,7 @@
       <recent name="C:\Komal\Week 15\Postman\Restful-Booker\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GetRestfullApiByID">
+  <component name="RunManager" selected="JUnit.PostRestfullApi.createNewBooking">
     <configuration name="GetRestfullApiByID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Restful-Booker" />
       <extension name="coverage">
@@ -122,7 +123,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetRestfullApi.verifyStatusCodeBdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PostRestfullApi.createNewBooking" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Restful-Booker" />
       <extension name="coverage">
         <pattern>
@@ -131,8 +132,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="restful.booker.apitest" />
-      <option name="MAIN_CLASS_NAME" value="restful.booker.apitest.GetRestfullApi" />
-      <option name="METHOD_NAME" value="verifyStatusCodeBdd" />
+      <option name="MAIN_CLASS_NAME" value="restful.booker.apitest.PostRestfullApi" />
+      <option name="METHOD_NAME" value="createNewBooking" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PostRestfullApi.createNewBooking" />
         <item itemvalue="JUnit.GetRestfullApiByID" />
         <item itemvalue="JUnit.GetRestfullApiByID.verifyUserByID" />
         <item itemvalue="JUnit.GetRestfullApiByID.verifyStatusCode" />
         <item itemvalue="JUnit.GetRestfullApiByID.GetAllBookingByID" />
-        <item itemvalue="JUnit.GetRestfullApi.verifyStatusCodeBdd" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718567695419</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="First push">
+      <option name="closed" value="true" />
+      <created>1718570352141</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718570352141</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
