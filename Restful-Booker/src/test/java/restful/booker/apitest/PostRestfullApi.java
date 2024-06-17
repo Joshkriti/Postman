@@ -21,7 +21,7 @@ public class PostRestfullApi {
         given()
                 .when()
                 .body("{\r\n    \"firstname\" : \"Komal\",\r\n    \"lastname\" : \"Kanji\",\r\n    \"totalprice\" : 111,\r\n    \"depositpaid\" : true,\r\n    \"bookingdates\" : {\r\n        \"checkin\" : \"2022-12-01\",\r\n        \"checkout\" : \"2023-10-01\"\r\n    },\r\n    \"additionalneeds\" : \"Full meal\"\r\n}")
-                //.body("{\"firstname\":\"John\",\"lastname\":\"Smith\",\"totalprice\":\"111\",\"depositpaid\":\"true\",\"checkin\":\"2018-01-01\",\"checkout\":\"2019-01-01\",\"additionalneeds\":\"Breakfast\"}")
+                //.body("{\"firstname\":\"John\",\"lastname\":\"Smith\",\"totalprice\":\"111\",\"depositpaid\":\"true\","bookingdates" : { \"checkin\":\"2018-01-01\",\"checkout\":\"2019-01-01\" },\"additionalneeds\":\"Breakfast\"}")
                 .post("https://restful-booker.herokuapp.com/booking")
                 .then().log().all()
                 .statusCode(200);

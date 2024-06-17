@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="054150d3-1d1e-4e2e-95a1-4f2eef44f51f" name="Changes" comment="First push">
-      <change afterPath="$PROJECT_DIR$/../Best-Buy/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Best-Buy/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Best-Buy/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Best-Buy/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Best-Buy/src/main/java/best/buy/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Best-Buy/src/test/java/best/buy/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Best-Way/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Best-Way/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/restful/booker/apitest/PostRestfullApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restful/booker/apitest/PostRestfullApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,43 +32,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.GetRestfullApi.getAllBooking.executor": "Run",
-    "JUnit.GetRestfullApi.verifyStatusCode.executor": "Run",
-    "JUnit.GetRestfullApi.verifyStatusCodeBdd.executor": "Run",
-    "JUnit.GetRestfullApiByID.GetAllBookingByID.executor": "Run",
-    "JUnit.GetRestfullApiByID.executor": "Run",
-    "JUnit.GetRestfullApiByID.verifyStatusCode.executor": "Run",
-    "JUnit.GetRestfullApiByID.verifyUserByID.executor": "Run",
-    "JUnit.PostRestfullApi.createBookingBdd.executor": "Run",
-    "JUnit.PostRestfullApi.createNewBooking.executor": "Run",
-    "JUnit.PostRestfullApi.getEmployeeById.executor": "Run",
-    "JUnit.PostRestfullApi.verifyStatusCode.executor": "Run",
-    "JUnit.PostRestfullApi.verifyUser.executor": "Run",
-    "JUnit.PutRestfullApi.putNewBooking.executor": "Run",
-    "JUnit.PutRestfullApi.update.executor": "Run",
-    "JUnit.PutRestfullApi.updateBooking.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Komal/Softwere/Hamcrest/hamcrest-2.2.jar",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.GetRestfullApi.getAllBooking.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GetRestfullApi.verifyStatusCode.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GetRestfullApi.verifyStatusCodeBdd.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GetRestfullApiByID.GetAllBookingByID.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GetRestfullApiByID.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GetRestfullApiByID.verifyStatusCode.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GetRestfullApiByID.verifyUserByID.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PostRestfullApi.createBookingBdd.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PostRestfullApi.createNewBooking.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PostRestfullApi.getEmployeeById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PostRestfullApi.verifyStatusCode.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PostRestfullApi.verifyUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PutRestfullApi.putNewBooking.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PutRestfullApi.update.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PutRestfullApi.updateBooking.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Komal/Softwere/Hamcrest/hamcrest-2.2.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Komal\Week 15\Postman\Restful-Booker\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PutRestfullApi.update">
-    <configuration name="PostRestfullApi.getEmployeeById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PostRestfullApi.createNewBooking">
+    <configuration name="PostRestfullApi.createNewBooking" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Restful-Booker" />
       <extension name="coverage">
         <pattern>
@@ -81,13 +78,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="restful.booker.apitest" />
       <option name="MAIN_CLASS_NAME" value="restful.booker.apitest.PostRestfullApi" />
-      <option name="METHOD_NAME" value="getEmployeeById" />
+      <option name="METHOD_NAME" value="createNewBooking" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostRestfullApi.verifyUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PostRestfullApi.verifyStatusCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Restful-Booker" />
       <extension name="coverage">
         <pattern>
@@ -97,7 +94,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="restful.booker.apitest" />
       <option name="MAIN_CLASS_NAME" value="restful.booker.apitest.PostRestfullApi" />
-      <option name="METHOD_NAME" value="verifyUser" />
+      <option name="METHOD_NAME" value="verifyStatusCode" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PostRestfullApi.createNewBooking" />
+        <item itemvalue="JUnit.PostRestfullApi.verifyStatusCode" />
         <item itemvalue="JUnit.PutRestfullApi.update" />
         <item itemvalue="JUnit.PutRestfullApi.updateBooking" />
         <item itemvalue="JUnit.PutRestfullApi.putNewBooking" />
-        <item itemvalue="JUnit.PostRestfullApi.verifyUser" />
-        <item itemvalue="JUnit.PostRestfullApi.getEmployeeById" />
       </list>
     </recent_temporary>
   </component>

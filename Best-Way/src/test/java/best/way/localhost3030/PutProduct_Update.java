@@ -1,4 +1,4 @@
-package best.way.myfirsttest;
+package best.way.localhost3030;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
