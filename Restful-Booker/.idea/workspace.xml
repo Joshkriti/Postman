@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="054150d3-1d1e-4e2e-95a1-4f2eef44f51f" name="Changes" comment="First push">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/restful/booker/apitest/PostRestfullApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restful/booker/apitest/PostRestfullApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/restful/booker/apitest/PutRestfullApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restful/booker/apitest/PutRestfullApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Best-Buy/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Best-Buy/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Best-Buy/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Best-Buy/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Best-Buy/src/main/java/best/buy/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Best-Buy/src/test/java/best/buy/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718572819165</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="First push">
+      <option name="closed" value="true" />
+      <created>1718646462469</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718646462469</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
