@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="054150d3-1d1e-4e2e-95a1-4f2eef44f51f" name="Changes" comment="First push">
+      <change afterPath="$PROJECT_DIR$/../Best-Way/src/test/java/best/way/localhost8080/DeleteStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Best-Way/src/test/java/best/way/localhost8080/GetStudentByID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Best-Way/src/test/java/best/way/localhost8080/PostStudent_Create.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Best-Way/src/test/java/best/way/localhost8080/PutStudent_Update.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Best-Way/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Best-Way/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Best-Way/src/test/java/best/way/localhost3030/DeleteProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Best-Way/src/test/java/best/way/localhost3030/DeleteProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Best-Way/src/test/java/best/way/localhost3030/PostProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Best-Way/src/test/java/best/way/localhost3030/PostProduct_Create.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Best-Way/src/test/java/best/way/localhost3030/PutProduct_Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Best-Way/src/test/java/best/way/localhost3030/PutProduct_Update.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Best-Way/src/test/java/best/way/localhost8080/GetAllStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Best-Way/src/test/java/best/way/localhost8080/GetAllStudent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/restful/booker/apitest/PostRestfullApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restful/booker/apitest/PostRestfullApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

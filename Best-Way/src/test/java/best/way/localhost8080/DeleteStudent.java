@@ -1,4 +1,4 @@
-package best.way.localhost3030;
+package best.way.localhost8080;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
@@ -8,23 +8,25 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class DeleteProduct {
+public class DeleteStudent {
     RequestSpecification requestSpecification;
     Response response;
     ValidatableResponse validatableResponse;
 
     @Test
-    public void deleteProduct(){
-        RestAssured.baseURI = "http://localhost:3030/products/9999697";
+    public void deleteStudent(){
+        RestAssured.baseURI = "http://localhost:8080/student/101";
 
         requestSpecification = given();
 
         response = requestSpecification.delete();
 
-        String resString = response.prettyPrint();
+        String student = response.prettyPrint();
 
         validatableResponse = response.then();
 
-        validatableResponse.statusCode(200);
-    }
+        validatableResponse.statusCode(204);
+
+       validatableResponse.statusLine("HTTP/1.1 204 ");
+   }
 }

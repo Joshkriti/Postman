@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class PostProduct {
+public class PostProduct_Create {
     RequestSpecification requestSpecification;
     Response response;
     ValidatableResponse validatableResponse;
@@ -18,12 +18,11 @@ public class PostProduct {
     public void createNewProduct() {
 
         given()
-                .when()
-                .body( "{\n\t\"name\": \"New Product\",\n\t\"type\": \"Hard Good\",\n\t\"upc\": \"12345676\",\n\t\"price\": 99.99,\n\t\"description\": \"This is a placeholder request for creating a new product.\",\n\t\"model\": \"NP12345\"\n}")
-                //.body("{\"name\":\"Duracell - AA Batteries (16-Pack)\",\"type\":\"HardGood\",\"price\":\"10.00\",\"upc\":\"041333825014\",\"shipping\":\"2\",\"description\":\"Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack\",\"manufacturer\":\"Duracell\",\"model\":\"MN1500B8Z\"}")
+                .when().log().all()
+                .body("{\n\t\"name\": \"New Product\",\n\t\"type\": \"Hard Good\",\n\t\"upc\": \"12345676\",\n\t\"price\": 99.99,\n\t\"description\": \"This is a placeholder request for creating a new product.\",\n\t\"model\": \"NP12345\"\n}")
                 .post("http://localhost:3030/products")
                 .then().log().all()
-                .statusCode(200);
+                .statusCode(201);
     }
     @Test
     public void verifyStatusCode() {

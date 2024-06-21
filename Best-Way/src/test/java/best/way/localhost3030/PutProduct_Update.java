@@ -43,11 +43,6 @@ public class PutProduct_Update {
 
         validatableResponse.statusCode(200);
 
-
-
-
-
-
     }
 
 

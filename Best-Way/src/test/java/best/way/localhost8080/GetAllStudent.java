@@ -18,7 +18,7 @@ public class GetAllStudent {
         given()
                 .when()
                 .get("http://localhost:8080/student/list")
-                .then().log().all()
+                .then()
                 .statusCode(200);
     }
 
