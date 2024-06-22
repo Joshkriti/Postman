@@ -19,7 +19,7 @@ public class GetStudentByID {
     public void getStudentByID(){
         given()
                 .when()
-                .get("http://localhost:8080/student/101")
+                .get("http://localhost:8080/student/110")
                 .then().log().all()
                 .statusCode(200);
     }

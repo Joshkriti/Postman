@@ -1,4 +1,4 @@
-package best.way.localhost3030;
+package best.way.localhost3030.product;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -18,8 +18,15 @@ public class PutProduct_Update {
     public void updateProductDetails(){
         given()
                 .when()
-                .body("{\"name\":\"Duracell - AA Batteries (16-Pack)\",\"type\":\"HardGood\",\"price\":\"10.00\",\"upc\":\"041333825014\",\"shipping\":\"2\",\"description\":\"Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack\",\"manufacturer\":\"Duracell\",\"model\":\"MN1500B8Z\"}")
-                .put("http://localhost:3030/products/9999683")
+                .contentType(ContentType.JSON)
+                .body("{\"name\": \"Watch\",\n" +
+                        "\"type\": \"Hard Good\",\n" +
+                        "\"upc\": \"12345676\",\n" +
+                        "\"price\": 99.99,\n" +
+                        "\"description\": \"This is a placeholder request for creating a new product.\",\n" +
+                        "\"model\": \"NP12345\"\n" +
+                        "\t\t}")
+               .put("http://localhost:3030/products/9999708")
                 .then().log().all()
                 .statusCode(200);
     }
@@ -29,7 +36,7 @@ public class PutProduct_Update {
         // Adding product name
         String productUpdateData =  "{\n\t\"name\": \"Hand Watch\",\n\t\"type\": \"Hard Good\",\n\t\"upc\": \"12345676\",\n\t\"price\": 99.99,\n\t\"description\": \"This is a placeholder request for creating a new product.\",\n\t\"model\": \"NP12345\"\n}";
 
-        RestAssured.baseURI = "http://localhost:3030/products/9999694";
+        RestAssured.baseURI = "http://localhost:3030/products/9999708";
 
         requestSpecification = given().contentType(ContentType.JSON);
 

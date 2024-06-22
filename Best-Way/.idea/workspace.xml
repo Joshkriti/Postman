@@ -5,16 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b3d110d-2912-4dc4-a381-5610209e80dd" name="Changes" comment="First push">
-      <change afterPath="$PROJECT_DIR$/src/test/java/best/way/localhost8080/DeleteStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/best/way/localhost8080/GetStudentByID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/best/way/localhost8080/PostStudent_Create.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/best/way/localhost8080/PutStudent_Update.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/best/way/localhost3030/store/GetAllStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/best/way/localhost3030/store/GetStoreByID.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/best/way/localhost3030/DeleteProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/best/way/localhost3030/DeleteProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/best/way/localhost3030/PostProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/best/way/localhost3030/PostProduct_Create.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/best/way/localhost3030/PutProduct_Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/best/way/localhost3030/PutProduct_Update.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/best/way/localhost8080/GetAllStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/best/way/localhost8080/GetAllStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/best/way/localhost3030/DeleteProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/best/way/localhost3030/product/DeleteProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/best/way/localhost3030/GetAllProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/best/way/localhost3030/product/GetAllProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/best/way/localhost3030/GetProductByID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/best/way/localhost3030/product/GetProductByID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/best/way/localhost3030/PostProduct_Create.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/best/way/localhost3030/product/PostProduct_Create.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/best/way/localhost3030/PutProduct_Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/best/way/localhost3030/product/PutProduct_Update.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/best/way/localhost8080/DeleteStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/best/way/localhost8080/DeleteStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/best/way/localhost8080/GetStudentByID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/best/way/localhost8080/GetStudentByID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/best/way/localhost8080/PostStudent_Create.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/best/way/localhost8080/PostStudent_Create.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/best/way/localhost8080/PutStudent_Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/best/way/localhost8080/PutStudent_Update.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Restful-Booker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Restful-Booker/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Restful-Booker/src/test/java/restful/booker/apitest/PostRestfullApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Restful-Booker/src/test/java/restful/booker/apitest/PostRestfullApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Restful-Booker/src/test/java/restful/booker/apitest/PutRestfullApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Restful-Booker/src/test/java/restful/booker/apitest/PutRestfullApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,9 +51,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.DeleteProduct.deleteProduct.executor": "Run",
+    "TestNG.DeleteProduct.executor": "Run",
     "TestNG.DeleteStudent.deleteStudent.executor": "Run",
+    "TestNG.DeleteStudent.executor": "Run",
     "TestNG.GetAllProduct.executor": "Run",
     "TestNG.GetAllProductByID.verifyProductDescription.executor": "Run",
+    "TestNG.GetAllStore.getAllStores.executor": "Run",
+    "TestNG.GetAllStore.verifyAddress.executor": "Run",
+    "TestNG.GetAllStore.verifyStatusCode.executor": "Run",
+    "TestNG.GetAllStudent.executor": "Run",
     "TestNG.GetAllStudent.getAllStudentData.executor": "Run",
     "TestNG.GetAllStudent.verifyStateCode.executor": "Run",
     "TestNG.GetBestWayApi.getAllProduct.executor": "Run",
@@ -59,7 +70,12 @@
     "TestNG.GetBestWayApiByID.verifyProductName.executor": "Run",
     "TestNG.GetBestWayApiByID.verifyProductPrice.executor": "Run",
     "TestNG.GetBestWayApiByID.verifyStatusCode.executor": "Run",
+    "TestNG.GetProductByID.executor": "Run",
     "TestNG.GetProductByID.getProductByID.executor": "Run",
+    "TestNG.GetStoreByID.getStoresByID.executor": "Run",
+    "TestNG.GetStoreByID.verifyAddress.executor": "Run",
+    "TestNG.GetStoreByID.verifyStatusCode.executor": "Run",
+    "TestNG.GetStudentByID.executor": "Run",
     "TestNG.GetStudentByID.getStudentByID.executor": "Run",
     "TestNG.GetStudentByID.verifyStatusCode.executor": "Run",
     "TestNG.GetStudentByID.verifyStudentLastname.executor": "Run",
@@ -67,12 +83,16 @@
     "TestNG.PostProduct.createNewProduct.executor": "Run",
     "TestNG.PostProduct.verifyStatusCode.executor": "Run",
     "TestNG.PostProduct_Create.createNewProduct.executor": "Run",
+    "TestNG.PostProduct_Create.executor": "Run",
     "TestNG.PostProduct_Create.verifyStatusCode.executor": "Run",
     "TestNG.PostStudent_Create.createNewStudent.executor": "Run",
+    "TestNG.PostStudent_Create.executor": "Run",
     "TestNG.PostStudent_Create.komal.executor": "Run",
     "TestNG.PostStudent_Create.verifyStatusCode.executor": "Run",
+    "TestNG.PutProduct_Update.executor": "Run",
     "TestNG.PutProduct_Update.updateProduct.executor": "Run",
     "TestNG.PutProduct_Update.updateProductDetails.executor": "Run",
+    "TestNG.PutStudent_Update.executor": "Run",
     "TestNG.PutStudent_Update.updateStudentDetails.executor": "Run",
     "TestNG.PutStudent_Update.verifyStatusCode.executor": "Run",
     "git-widget-placeholder": "main",
@@ -92,18 +112,18 @@
       <recent name="best.way.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.DeleteStudent.deleteStudent">
-    <configuration name="DeleteStudent.deleteStudent" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.GetStoreByID.verifyAddress">
+    <configuration name="GetAllStore.verifyAddress" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Best-Way" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="best.way.localhost8080.*" />
+          <option name="PATTERN" value="best.way.localhost3030.store.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="best.way.localhost8080" />
-      <option name="MAIN_CLASS_NAME" value="best.way.localhost8080.DeleteStudent" />
-      <option name="METHOD_NAME" value="deleteStudent" />
+      <option name="PACKAGE_NAME" value="best.way.localhost3030.store" />
+      <option name="MAIN_CLASS_NAME" value="best.way.localhost3030.store.GetAllStore" />
+      <option name="METHOD_NAME" value="verifyAddress" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -111,16 +131,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostProduct_Create.verifyStatusCode" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GetAllStore.verifyStatusCode" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Best-Way" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="best.way.localhost3030.*" />
+          <option name="PATTERN" value="best.way.localhost3030.store.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="best.way.localhost3030" />
-      <option name="MAIN_CLASS_NAME" value="best.way.localhost3030.PostProduct_Create" />
+      <option name="PACKAGE_NAME" value="best.way.localhost3030.store" />
+      <option name="MAIN_CLASS_NAME" value="best.way.localhost3030.store.GetAllStore" />
       <option name="METHOD_NAME" value="verifyStatusCode" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -129,17 +149,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostStudent_Create.verifyStatusCode" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GetStoreByID.getStoresByID" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Best-Way" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="best.way.localhost8080.*" />
+          <option name="PATTERN" value="best.way.localhost3030.store.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="best.way.localhost8080" />
-      <option name="MAIN_CLASS_NAME" value="best.way.localhost8080.PostStudent_Create" />
-      <option name="METHOD_NAME" value="verifyStatusCode" />
+      <option name="PACKAGE_NAME" value="best.way.localhost3030.store" />
+      <option name="MAIN_CLASS_NAME" value="best.way.localhost3030.store.GetStoreByID" />
+      <option name="METHOD_NAME" value="getStoresByID" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -147,17 +167,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PutStudent_Update.updateStudentDetails" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GetStoreByID.verifyAddress" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Best-Way" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="best.way.localhost8080.*" />
+          <option name="PATTERN" value="best.way.localhost3030.store.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="best.way.localhost8080" />
-      <option name="MAIN_CLASS_NAME" value="best.way.localhost8080.PutStudent_Update" />
-      <option name="METHOD_NAME" value="updateStudentDetails" />
+      <option name="PACKAGE_NAME" value="best.way.localhost3030.store" />
+      <option name="MAIN_CLASS_NAME" value="best.way.localhost3030.store.GetStoreByID" />
+      <option name="METHOD_NAME" value="verifyAddress" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -165,16 +185,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PutStudent_Update.verifyStatusCode" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GetStoreByID.verifyStatusCode" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Best-Way" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="best.way.localhost8080.*" />
+          <option name="PATTERN" value="best.way.localhost3030.store.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="best.way.localhost8080" />
-      <option name="MAIN_CLASS_NAME" value="best.way.localhost8080.PutStudent_Update" />
+      <option name="PACKAGE_NAME" value="best.way.localhost3030.store" />
+      <option name="MAIN_CLASS_NAME" value="best.way.localhost3030.store.GetStoreByID" />
       <option name="METHOD_NAME" value="verifyStatusCode" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -185,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.DeleteStudent.deleteStudent" />
-        <item itemvalue="TestNG.PutStudent_Update.verifyStatusCode" />
-        <item itemvalue="TestNG.PutStudent_Update.updateStudentDetails" />
-        <item itemvalue="TestNG.PostStudent_Create.verifyStatusCode" />
-        <item itemvalue="TestNG.PostProduct_Create.verifyStatusCode" />
+        <item itemvalue="TestNG.GetStoreByID.verifyAddress" />
+        <item itemvalue="TestNG.GetStoreByID.verifyStatusCode" />
+        <item itemvalue="TestNG.GetStoreByID.getStoresByID" />
+        <item itemvalue="TestNG.GetAllStore.verifyAddress" />
+        <item itemvalue="TestNG.GetAllStore.verifyStatusCode" />
       </list>
     </recent_temporary>
   </component>

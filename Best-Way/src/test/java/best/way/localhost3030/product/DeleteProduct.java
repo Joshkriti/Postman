@@ -1,4 +1,4 @@
-package best.way.localhost3030;
+package best.way.localhost3030.product;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
@@ -15,7 +15,7 @@ public class DeleteProduct {
 
     @Test
     public void deleteProduct(){
-        RestAssured.baseURI = "http://localhost:3030/products/9999697";
+        RestAssured.baseURI = "http://localhost:3030/products/9999708";
 
         requestSpecification = given();
 

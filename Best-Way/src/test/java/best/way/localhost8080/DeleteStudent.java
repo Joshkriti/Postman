@@ -15,7 +15,7 @@ public class DeleteStudent {
 
     @Test
     public void deleteStudent(){
-        RestAssured.baseURI = "http://localhost:8080/student/101";
+        RestAssured.baseURI = "http://localhost:8080/student/110";
 
         requestSpecification = given();
 

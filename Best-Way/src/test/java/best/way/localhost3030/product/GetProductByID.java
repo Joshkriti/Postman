@@ -1,4 +1,4 @@
-package best.way.localhost3030;
+package best.way.localhost3030.product;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
@@ -19,14 +19,14 @@ public class GetProductByID {
     public void getProductByID(){
         given()
                 .when()
-                .get("http://localhost:3030/products/9999682")
+                .get("http://localhost:3030/products/9999708")
                 .then()
                 .statusLine("HTTP/1.1 200 OK");
     }
 
     @Test
     public void verifyStatusCode(){
-        RestAssured.baseURI = "http://localhost:3030/products/127687";
+        RestAssured.baseURI = "http://localhost:3030/products/9999708";
 
         requestSpecification = RestAssured.given();
 

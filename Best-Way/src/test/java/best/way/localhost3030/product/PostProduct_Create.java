@@ -1,4 +1,4 @@
-package best.way.localhost3030;
+package best.way.localhost3030.product;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -18,8 +18,17 @@ public class PostProduct_Create {
     public void createNewProduct() {
 
         given()
-                .when().log().all()
-                .body("{\n\t\"name\": \"New Product\",\n\t\"type\": \"Hard Good\",\n\t\"upc\": \"12345676\",\n\t\"price\": 99.99,\n\t\"description\": \"This is a placeholder request for creating a new product.\",\n\t\"model\": \"NP12345\"\n}")
+                .when()
+                .contentType(ContentType.JSON)
+                .body("{\n" +
+                        "\"name\" : \"New Product\",\n" +
+                        "\"type\": \"Hard Good\",\n" +
+                        "\"upc\": \"12345676\",\n" +
+                        "\"price\": 99.99,\n" +
+                        "\"description\": \"This is a placeholder request for creating a new product.\",\n" +
+                        "\"model\": \"NP12345\"\n" +
+                        "\n" +
+                        "}")
                 .post("http://localhost:3030/products")
                 .then().log().all()
                 .statusCode(201);
@@ -27,7 +36,7 @@ public class PostProduct_Create {
     @Test
     public void verifyStatusCode() {
 
-        String productData =  "{\n\t\"name\": \"New Product\",\n\t\"type\": \"Hard Good\",\n\t\"upc\": \"12345676\",\n\t\"price\": 99.99,\n\t\"description\": \"This is a placeholder request for creating a new product.\",\n\t\"model\": \"NP12345\"\n}";
+        String productData = "{\n\t\"name\": \"New Product\",\n\t\"type\": \"Hard Good\",\n\t\"upc\": \"12345676\",\n\t\"price\": 99.99,\n\t\"description\": \"This is a placeholder request for creating a new product.\",\n\t\"model\": \"NP12345\"\n}";
 
         RestAssured.baseURI = "http://localhost:3030/products";
 

@@ -1,6 +1,7 @@
 package restful.booker.apitest;
 
 import io.restassured.RestAssured;
+import io.restassured.authentication.AuthenticationScheme;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
@@ -17,40 +18,80 @@ public class PutRestfullApi {
 
     @Test
     public void putNewBooking(){
-        given()
+        String accessToken = "ec02847bd616fbf";
+        given().auth()
+                .oauth2(accessToken)
                 .when()
-                .body("{\r\n    \"firstname\" : \"Jiya\",\r\n    \"lastname\" : \"Shah\",\r\n    \"totalprice\" : 111,\r\n    \"depositpaid\" : true,\r\n    \"bookingdates\" : {\r\n        \"checkin\" : \"2022-12-01\",\r\n        \"checkout\" : \"2023-10-01\"\r\n    },\r\n    \"additionalneeds\" : \"Full meal\"\r\n}")
+                .contentType(ContentType.JSON)
+                .body("{\n" +
+                        "    \"firstname\" : \"Komal\",\n" +
+                        "    \"lastname\" : \"Kanji\",\n" +
+                        "    \"totalprice\" : 111,\n" +
+                        "    \"depositpaid\" : true,\n" +
+                        "    \"bookingdates\" : {\n" +
+                        "        \"checkin\" : \"2018-01-01\",\n" +
+                        "        \"checkout\" : \"2019-01-01\"\n" +
+                        "    },\n" +
+                        "    \"additionalneeds\" : \"Breakfast\"\n" +
+                        "}")
                 .put("https://restful-booker.herokuapp.com/booking/199")
                 .then().log().all()
                 .statusCode(200);
     }
 
+
+
     @Test
     public void updateBooking(){
+        RestAssured.authentication = basic("c1d73629071cd49");
 
-        String updateData = "{\r\n    \"firstname\" : \"Jiya\",\r\n    \"lastname\" : \"Shah\",\r\n    \"totalprice\" : 111,\r\n    \"depositpaid\" : true,\r\n    \"bookingdates\" : {\r\n        \"checkin\" : \"2022-12-01\",\r\n        \"checkout\" : \"2023-10-01\"\r\n    },\r\n    \"additionalneeds\" : \"Full meal\"\r\n}";
-
-        RestAssured.baseURI = "https://restful-booker.herokuapp.com/booking/12";
+        String updateData = "{\n" +
+                "    \"firstname\" : \"Komal\",\n" +
+                "    \"lastname\" : \"Kanji\",\n" +
+                "    \"totalprice\" : 111,\n" +
+                "    \"depositpaid\" : true,\n" +
+                "    \"bookingdates\" : {\n" +
+                "        \"checkin\" : \"2018-01-01\",\n" +
+                "        \"checkout\" : \"2019-01-01\"\n" +
+                "    },\n" +
+                "    \"additionalneeds\" : \"Breakfast\"\n" +
+                "}" ;
+        RestAssured.baseURI = "https://restful-booker.herokuapp.com/booking/4432";
 
         requestSpecification = given().contentType(ContentType.JSON);
 
-        //response = requestSpecification.put("key : Cookie , value : token=73670c4cfab7e01, type : text");
+        /*String cookieValue = response.getCookie("7c8b4263cd967d9");
+        System.out.println(cookieValue);*/
+
+
+
         response = requestSpecification.put();
         requestSpecification.body(updateData);
 
-        requestSpecification = given().contentType(ContentType.JSON);
         validatableResponse = response.then();
 
-        // Get status code
         validatableResponse.statusCode(200);
 
     }
 
+    private AuthenticationScheme basic(String cookie) {
+        return null;
+    }
+
+
     @Test
     public void update(){
-        String updateData = "{\r\n    \"firstname\" : \"Jiya\",\r\n    \"lastname\" : \"Shah\",\r\n    \"totalprice\" : 111,\r\n    \"depositpaid\" : true,\r\n    \"bookingdates\" : {\r\n        \"checkin\" : \"2022-12-01\",\r\n        \"checkout\" : \"2023-10-01\"\r\n    },\r\n    \"additionalneeds\" : \"Full meal\"\r\n}";
-
-        RestAssured.baseURI = "https://restful-booker.herokuapp.com/booking/12";
+        String updateData = "{\n" +
+                "    \"firstname\" : \"Komal\",\n" +
+                "    \"lastname\" : \"Kanji\",\n" +
+                "    \"totalprice\" : 111,\n" +
+                "    \"depositpaid\" : true,\n" +
+                "    \"bookingdates\" : {\n" +
+                "        \"checkin\" : \"2018-01-01\",\n" +
+                "        \"checkout\" : \"2019-01-01\"\n" +
+                "    },\n" +
+                "    \"additionalneeds\" : \"Breakfast\"\n" +
+                "}";
 
         requestSpecification = given().contentType(ContentType.JSON);
         requestSpecification.body(updateData);

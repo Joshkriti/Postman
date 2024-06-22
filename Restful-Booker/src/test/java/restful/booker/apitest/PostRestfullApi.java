@@ -20,8 +20,18 @@ public class PostRestfullApi {
     public void createNewBooking() {
         given()
                 .when()
-                .body("{\r\n    \"firstname\" : \"Komal\",\r\n    \"lastname\" : \"Kanji\",\r\n    \"totalprice\" : 111,\r\n    \"depositpaid\" : true,\r\n    \"bookingdates\" : {\r\n        \"checkin\" : \"2022-12-01\",\r\n        \"checkout\" : \"2023-10-01\"\r\n    },\r\n    \"additionalneeds\" : \"Full meal\"\r\n}")
-                //.body("{\"firstname\":\"John\",\"lastname\":\"Smith\",\"totalprice\":\"111\",\"depositpaid\":\"true\","bookingdates" : { \"checkin\":\"2018-01-01\",\"checkout\":\"2019-01-01\" },\"additionalneeds\":\"Breakfast\"}")
+                .contentType(ContentType.JSON)
+                .body("{\n" +
+                        "    \"firstname\" : \"Komal\",\n" +
+                        "    \"lastname\" : \"Kanji\",\n" +
+                        "    \"totalprice\" : 111,\n" +
+                        "    \"depositpaid\" : true,\n" +
+                        "    \"bookingdates\" : {\n" +
+                        "        \"checkin\" : \"2018-01-01\",\n" +
+                        "        \"checkout\" : \"2019-01-01\"\n" +
+                        "    },\n" +
+                        "    \"additionalneeds\" : \"Breakfast\"\n" +
+                        "}")
                 .post("https://restful-booker.herokuapp.com/booking")
                 .then().log().all()
                 .statusCode(200);
@@ -29,13 +39,24 @@ public class PostRestfullApi {
 
     @Test
     public void verifyStatusCode(){
-        String bookingData = "{\r\n    \"firstname\" : \"Komal\",\r\n    \"lastname\" : \"Kanji\",\r\n    \"totalprice\" : 111,\r\n    \"depositpaid\" : true,\r\n    \"bookingdates\" : {\r\n        \"checkin\" : \"2022-12-01\",\r\n        \"checkout\" : \"2023-10-01\"\r\n    },\r\n    \"additionalneeds\" : \"Full meal\"\r\n}";
-
+        String bookingData = "{\n" +
+                "    \"firstname\" : \"Komal\",\n" +
+                "    \"lastname\" : \"Kanji\",\n" +
+                "    \"totalprice\" : 111,\n" +
+                "    \"depositpaid\" : true,\n" +
+                "    \"bookingdates\" : {\n" +
+                "        \"checkin\" : \"2018-01-01\",\n" +
+                "        \"checkout\" : \"2019-01-01\"\n" +
+                "    },\n" +
+                "    \"additionalneeds\" : \"Breakfast\"\n" +
+                "}";
         RestAssured.baseURI = "https://restful-booker.herokuapp.com/booking";
 
-        requestSpecification = RestAssured.given().contentType(ContentType.JSON);
+        requestSpecification = given().contentType(ContentType.JSON);
 
         requestSpecification.body(bookingData);
+
+
 
         response = requestSpecification.post();
 

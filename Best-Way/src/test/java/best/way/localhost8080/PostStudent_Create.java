@@ -17,13 +17,13 @@ public class PostStudent_Create {
 
     @Test
     public void createNewStudent(){
-        given().log().all()
+        given()
                 .when()
                 .contentType(ContentType.JSON)
                 .body("{\n" +
                         "    \"firstName\": \"Komal\",\n" +
                         "    \"lastName\": \"Kan\",\n" +
-                        "    \"email\": \"Komal.k11@gmail.com\",\n" +
+                        "    \"email\": \"Komal.kanji27@gmail.com\",\n" +
                         "    \"programme\": \"Financial Analysis\",\n" +
                         "    \"courses\": [\n" +
                         "        \"Accounting\"\n" +
@@ -38,7 +38,7 @@ public class PostStudent_Create {
        String studentData ="{\n" +
                "    \"firstName\": \"Komal\",\n" +
                "    \"lastName\": \"Kanji\",\n" +
-               "    \"email\": \"Komal.kan1@gmail.com\",\n" +
+               "    \"email\": \"Komal.kanji28@gmail.com\",\n" +
                "    \"programme\": \"Financial Analysis\",\n" +
                "    \"courses\": [\n" +
                "        \"Accounting\"\n" +
